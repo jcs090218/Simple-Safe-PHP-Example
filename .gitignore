@@ -1,0 +1,9 @@
+# source control
+/.git
+
+# some directories
+.env
+
+# development scripts
+*.bat
+*.sh
