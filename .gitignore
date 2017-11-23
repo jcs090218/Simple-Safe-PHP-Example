@@ -2,8 +2,8 @@
 /.git
 
 # some directories
-.env
 /config
+.env
 
 # development scripts
 *.bat
