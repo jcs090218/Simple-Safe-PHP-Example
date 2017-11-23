@@ -3,6 +3,7 @@
 
 # some directories
 .env
+/config
 
 # development scripts
 *.bat
