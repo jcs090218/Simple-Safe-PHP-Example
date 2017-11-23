@@ -9,6 +9,9 @@
  */
 
 
-
+$host = 'localhost';
+$user = 'root';
+$pass = '';
+$database = 'ssp-example-db';
 
 ?>
