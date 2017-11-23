@@ -54,7 +54,8 @@ function isForbiddenFile($fileName) {
  * @param { string } var : variable name.
  * @return { bool } : true, isset. false, vice versa.
  */
-function issetPost($var) {
+function issetPost($var)
+{
   return isset($_POST[$var]);
 }
 
