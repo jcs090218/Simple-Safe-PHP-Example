@@ -7,6 +7,7 @@ be functionally working for your project. <br/><br/>
 * https://github.com/jcs090218/Simple-Safe-PHP
 
 ## Example Code ##
+### Code ###
 ```
 <?php
 /**
@@ -86,4 +87,6 @@ while ($row = SSP\result_getOneRow($result)) {
 }
 ?>
 ```
+
+### Output ###
 <img src="./screen_shot/example-code.png" />
