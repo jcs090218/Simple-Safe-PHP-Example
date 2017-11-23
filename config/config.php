@@ -11,8 +11,7 @@
 
 $host = 'localhost';
 $user = 'root';
-//$pass = '';
-$pass = 'mike0316M';
+$pass = '';
 $database = 'ssp-example-db';
 
 ?>
