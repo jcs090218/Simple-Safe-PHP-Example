@@ -38,12 +38,18 @@ function sql_select_db($conn, $database) {
 /**
  * Sanitize the sql variable.
  *
+ * @param { void* } conn : Connection object.
  * @param { void* } var : any data type going to be sanitize.
  * @return { void* } : data been sanitize.
  */
-function sql_sanitize($var) {
+function sql_sanitize($conn, $var) {
+  if ($conn == NULL) {
+    error("Cannot sanitize variable with null reference connection object...");
+    return NULL;
+  }
+
   if (function_exists("mysqli_real_escape_string")) {
-    $var = mysqli_real_escape_string($var);
+    $var = mysqli_real_escape_string($conn, $var);
   } else {
     $var = addslashes($var);
   }

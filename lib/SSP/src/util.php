@@ -13,7 +13,7 @@ namespace SSP;
 /**
  * Write out the text with line break sign.
  */
-function println($text) {
+function println($text = "") {
   echo $text . "<br/>";
 }
 
@@ -41,7 +41,7 @@ function safeSessionStart() {
  * @return { bool } : true, is forbidden. false, vice versa.
  */
 function isForbiddenFile($fileName) {
-  if (basename($_SERVER["PHP_SELF"]) == $fileName)
+  if (basename($_SERVER["PHP_SELF"]) != $fileName)
     return false;
 
   die("Error 403 - Forbidden");
@@ -54,8 +54,7 @@ function isForbiddenFile($fileName) {
  * @param { string } var : variable name.
  * @return { bool } : true, isset. false, vice versa.
  */
-function issetPost($var)
-{
+function issetPost($var) {
   return isset($_POST[$var]);
 }
 
